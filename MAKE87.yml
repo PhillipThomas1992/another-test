@@ -1,9 +1,21 @@
 build_kit:
-  name: python3
+  name: file://build_kit/Dockerfile
   version: latest
+  target_architectures:
+  - amd64
+  - arm64
 outbound_topics:
-  - name: HELLO_WORLD_MESSAGE
-    message_type: make87_messages.text.text_plain.PlainText
-  - name: LOG_MESSAGE
-    message_type: make87_messages.text.log_message.LogMessage
-
+- name: HELLO_WORLD_MESSAGE
+  message_type: make87_messages.text.text_plain.PlainText
+- name: LOG_MESSAGE
+  message_type: make87_messages.text.log_message.LogMessage
+inbound_topics: []
+requester_endpoints: []
+provider_endpoints: []
+port_requirements: []
+peripheral_requirements: []
+needs_host_network: false
+needs_privileged: false
+config:
+  values: []
+volume_requirements: []
