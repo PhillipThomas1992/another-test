@@ -16,6 +16,7 @@ def main():
         topic.publish(message)
         message = LogMessage(header=m87.create_header(Header, entity_path="/log"), message="Hello, Log! 🐍")
         log_topic.publish(message)
+        
         print(f"Published !!!: {message}")
         time.sleep(1)
 
