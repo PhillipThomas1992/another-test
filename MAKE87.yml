@@ -6,3 +6,4 @@ outbound_topics:
     message_type: make87_messages.text.text_plain.PlainText
   - name: LOG_MESSAGE
     message_type: make87_messages.text.log_message.LogMessage
+
